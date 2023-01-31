@@ -12,7 +12,7 @@ resource "aws_key_pair" "lab" {
 }
 
 resource "aws_eip" "lab_eip" {
-  instance = aws_instance.Grafana_ec2id
+  instance = aws_instance.Grafana_ec2.id
 }
 
 resource "aws_instance" "Grafana_ec2" {
